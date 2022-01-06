@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap');
+
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --white:rgba(254,255,254,255);
+    --gray: rgba(153,152,154,255);
+    --radius: 0.8rem;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(./img/bg-pattern-bottom.svg);
+}
+section.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+    background-image: url(./img/bg-pattern-top.svg); 
+}
+main.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    width: 400px;
+    background-color: white;
+    border-radius: var(--radius);
+}
+div.illustration-hero img{
+    width:  400px;
+    border-radius: 0.8rem 0.8rem 0 0;
+    /* background-size: cover; */
+}
+.profile-pic img{
+    border-radius: 50%;
+    overflow: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 8rem;
+    margin: auto;
+}
+
+.personal-info{
+    margin: 4rem 0 2rem 0;
+    font-size: 18px;
+}
+.name_age{
+ display: flex;
+ flex-direction:row;
+}
+.name_age p{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0.7rem;
+}
+.personal-info .country{
+    color: var(--gray);
+    text-align: center;
+    margin: 0.7rem 0 0.9rem 0;
+}
+
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.followers,.likes,.photos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0.6rem 1.5rem 2rem 1.5rem ;
+}
+.box h3{
+    margin: 0 0 0.5rem 0;
+}
